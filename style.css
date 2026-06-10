@@ -28,7 +28,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
- }
+ } 
 
  .hide{
     display: none;
@@ -118,4 +118,112 @@ background-color: dodgerblue;
     color: yellow;
     margin-bottom: 2rem;
     font-weight: bold;
+}
+
+/* ========================= */
+/* Tablet Responsive Design  */
+/* ========================= */
+
+@media (max-width: 768px){
+
+    html{
+        font-size: 55%;
+    }
+
+    body{
+        overflow-y: auto;
+        background-size: cover;
+    }
+
+    .display-container{
+        width: 90%;
+        height: auto;
+        margin-top: 3rem;
+        padding: 1.5rem;
+    }
+
+    .header{
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    .timer-div{
+        padding: 1rem 2rem;
+    }
+
+    #next-btn{
+        margin-left: 0;
+        display: block;
+        margin-inline: auto;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .option-div{
+        font-size: 1.6rem;
+        padding: 1.2rem;
+    }
+
+    .question{
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+
+    #user-score{
+        text-align: center;
+        padding-inline: 2rem;
+    }
+}
+
+
+/* ========================= */
+/* Mobile Responsive Design  */
+/* ========================= */
+
+@media (max-width: 480px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .display-container{
+        width: 95%;
+        padding: 1.2rem;
+        margin-top: 2rem;
+    }
+
+    .header{
+        font-size: 1.5rem;
+    }
+
+    .question{
+        font-size: 1.8rem;
+    }
+
+    .option-div{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    #start-button,
+    #restart{
+        width: 80%;
+        font-size: 1.8rem;
+    }
+
+    #next-btn{
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .timer-div{
+        width: 100%;
+        text-align: center;
+    }
+
+    #user-score{
+        font-size: 2.4rem;
+    }
+
 }

@@ -68,6 +68,7 @@ const displayNextQuestion = () => {
 
   // if last question 
 
+
     if(questionCount == quizArray.length){
       // hide question container and display score container 
  
@@ -108,7 +109,7 @@ const timerDisplay = () => {
 
 }
 
-// Display Quiz 
+// Display Quiz   
 
 const displayQuiz = (questionCount) => {
   const quizCards = document.querySelectorAll(".container-mid")
@@ -188,7 +189,7 @@ const checker = (userOption) => {
       }else{
         
         userOption.classList.add("incorrect")
-
+ 
         // for knowing the correct answer 
 
         options.forEach((curElem) => {
